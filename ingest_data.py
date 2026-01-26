@@ -12,8 +12,8 @@ from tqdm  import tqdm
 @click.option('--db', default='ny_taxi', help='PostgreSQL database name')
 @click.option('--table', default='yellow_taxi_data', help='Target table name')
 def ingest_data(user, password, host, port, db, table):
-    year=2021
-    month=1
+    year=2025
+    month=11
     # Read a sample of the data
     prefix = 'https://github.com/DataTalksClub/nyc-tlc-data/releases/download/yellow/'
     url=f"{prefix}/yellow_tripdata_{year}-{month:02d}.csv.gz"
