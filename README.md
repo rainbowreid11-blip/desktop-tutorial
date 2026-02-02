@@ -1,5 +1,1 @@
-# Welcome to GitHub Desktop!
-
-This is your README. READMEs are where you can communicate what your project is and how to use it.
-
-Write your name on line 6, save it, and then head back to GitHub Desktop.
+This is the Data Engineering zoomcamp project.During the period of studing this course,I will share my learning procession and ohter learning materials.
