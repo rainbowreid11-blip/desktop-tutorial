@@ -9,12 +9,12 @@
 """
 import os
 import sys
+import time
 import urllib.request
 from concurrent.futures import ThreadPoolExecutor
-from google.cloud import storage
-from google.api_core.exceptions import NotFound, Forbidden
-import time
 
+from google.api_core.exceptions import NotFound, Forbidden
+from google.cloud import storage
 
 # Change this to your bucket name
 BUCKET_NAME = "this_is_jane_unique_gcp_bucket_name"
@@ -28,7 +28,7 @@ client = storage.Client.from_service_account_json(CREDENTIALS_FILE)
 
 BASE_URL = "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-"
 MONTHS = [f"{i:02d}" for i in range(1, 7)]
-DOWNLOAD_DIR = "."
+DOWNLOAD_DIR = ".."
 
 CHUNK_SIZE = 8 * 1024 * 1024
 

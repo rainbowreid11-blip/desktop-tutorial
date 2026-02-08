@@ -1,7 +1,7 @@
-import pandas as pd
+import time
+
 import pyarrow.parquet as pq
 from sqlalchemy import create_engine
-import time
 
 # 1. 连接到你的PostgreSQL容器
 # 格式: postgresql://用户名:密码@主机:端口/数据库名
